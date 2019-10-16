@@ -1,0 +1,10 @@
+@import 'var.css';
+
+body {
+    border: 5px solid var(--main-color);
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: auto;
+}

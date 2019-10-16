@@ -1,0 +1,84 @@
+@import 'var.css';
+
+main, main .cards {
+    margin-bottom: 90px;
+}
+
+main section:not(.cards) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 90px auto;
+    min-height: 170px;
+}
+
+main section:not(.cards) p {
+   max-width: 700px; 
+   margin: auto;
+   margin-top: 30px;
+}
+
+main section > p {
+    max-width: 700px;
+    margin: auto;
+}
+
+figcaption {
+    background-color: var(--main-color);
+    height: 150px;
+    width: 250px;
+    color: white;
+    padding: 40px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+figcaption span:nth-child(1) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
+
+figcaption span:nth-child(2) {
+    font-family: 'Alice', serif;
+    font-size: 25px;
+}
+
+/* SECTION INTRO */
+
+main .intro > p {
+    font-weight: 600;
+}
+
+/* SECTION CARDS */
+main .cards {
+    display: flex;
+}
+
+main .cards article {
+    width: 20%;
+    margin: 0 10px;
+    height: 236px;
+    background-color: #ebf2fa;
+    padding: 30px 50px;
+    color: #aaadb2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+main .cards article:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+main .cards article h3 {
+    font-weight: normal;
+}
+
+main .cards article span {
+    color: black;
+    font-weight: bold;
+}
