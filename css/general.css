@@ -2,10 +2,10 @@
 
 html, body {
     scroll-behavior: smooth;
-} 
+}
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Alice', serif;
+    font-family: var(--alice);
     font-size: 30px;
     font-weight: 600;
 }
@@ -21,6 +21,6 @@ h4 {
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--montserrat);
     line-height: 25px;
 }

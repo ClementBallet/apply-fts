@@ -5,6 +5,13 @@ body {
 }
 
 .wrapper {
-    max-width: 1280px;
+    max-width: 1400px;
     margin: auto;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1400px) {
+    .wrapper {
+        width: 100%;
+    }
 }

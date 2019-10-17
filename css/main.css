@@ -9,28 +9,21 @@ main section:not(.cards) {
     flex-direction: column;
     text-align: center;
     margin: 90px auto;
-    min-height: 170px;
 }
 
 main section:not(.cards) p {
-    max-width: 700px; 
+    max-width: 55%;
     margin: 30px auto;
-}
-
-main section > p {
-    max-width: 700px;
-    margin: auto;
 }
 
 figure {
     position: relative;
-    max-width: 700px;
+    max-width: 55%;
     margin: auto;
 }
 
 figure img {
     width: 560px;
-    margin-left: -139px;
 }
 
 figcaption {
@@ -42,19 +35,18 @@ figcaption {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: start;
     position: absolute;
     top: 43%;
-    left: 74%;
+    text-align: start;
 }
 
 figcaption span:nth-child(1) {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--montserrat);
     font-size: small;
 }
 
 figcaption span:nth-child(2) {
-    font-family: 'Alice', serif;
+    font-family: var(--alice);
     font-size: 25px;
 }
 
@@ -67,12 +59,12 @@ main .intro > p {
 /* SECTION CARDS */
 main .cards {
     display: flex;
+    flex-wrap: wrap;
 }
 
 main .cards article {
-    width: 20%;
-    margin: 0 10px;
-    height: 236px;
+    width: 256px;
+    height: 256px;
     background-color: #ebf2fa;
     padding: 30px 50px;
     color: #aaadb2;
@@ -80,6 +72,7 @@ main .cards article {
     flex-direction: column;
     justify-content: space-around;
     cursor: pointer;
+    margin: 15px auto;
 }
 
 main .cards article:hover {
@@ -94,4 +87,86 @@ main .cards article h3 {
 main .cards article span {
     color: black;
     font-weight: bold;
+}
+
+/* SECTION DISCOVER */
+section.discover figure img {
+    margin-left: -139px;
+}
+
+section.discover figcaption {
+    left: 74%;
+}
+
+/* SECTION OSTHOFFEN */
+.renseignements {
+    max-width: 55%;
+    display: flex;
+    margin: 30px auto;
+    line-height: 30px;
+}
+
+.renseignements hgroup {
+    width: 40%;
+    padding-right: 7px;
+}
+
+.renseignements hgroup h4 {
+    font-size: 17px;
+}
+
+.renseignements div {
+    font-family: var(--montserrat);
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-align: left;
+}
+
+section.osthoffen figure img {
+    margin-left: 139px;
+}
+
+section.osthoffen figcaption {
+    left: 0;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1400px) {
+    main section:not(.cards) p {
+        max-width: 80%;
+    }
+
+    figure {
+        position: unset;
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.discover figure img,
+    section.osthoffen figure img {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    section.discover figcaption,
+    section.osthoffen figcaption {
+        top: unset;
+        left: unset;
+        margin: auto;
+        opacity: 0.7;
+    }
+
+    .renseignements {
+        max-width: 80%;
+    }
+
+    .renseignements hgroup {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }

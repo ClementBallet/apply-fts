@@ -1,0 +1,29 @@
+.back-to-top {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 100px;
+    border-radius: 50px 50px 0 0;
+    background-color: var(--main-color);
+    z-index: 999;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-to-top::before {
+    content: '\002191';
+    color: white;
+    font-size: 50px;
+    font-family: var(--montserrat);
+    margin-left: 35px;
+}
+
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}

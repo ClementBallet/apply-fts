@@ -37,7 +37,7 @@ h1 {
 }
 
 h1 span {
-    font-family: 'Alice', serif;
+    font-family: var(--alice);
     text-decoration: underline;
     font-weight: 600;
     font-size: 16px;
@@ -46,3 +46,9 @@ h1 span {
     vertical-align: middle;
 }
 
+/* RESPONSIVE */
+@media screen and (max-width: 1500px) {
+    nav {
+        margin-right: 20px;
+    }
+}
