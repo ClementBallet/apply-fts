@@ -132,7 +132,7 @@ section.osthoffen figcaption {
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
     main section:not(.cards) p {
         max-width: 80%;
     }
